@@ -1,0 +1,5 @@
+Codeville — http://codeville.org/
+
+"Por que ainda mais um sistema de controle de versão? Todos os outros sistemas de controle de versão exigem que você mantenha uma varredura cuidadosa das relações entre os ramos de versões (branches), de modo a não ter que mesclar várias vezes os mesmos conflitos. O Codeville é muito mais anárquico. Ele permite você a atualizar ou enviar, de ou para, qualquer repositório a qualquer hora com nenhuma re-integração desnecessária."
+
+"O Codeville funciona através da criação de um identificador para cada mudança que é feita, e relembrando a lista de todas as mudanças que tem sido aplicadas para cada arquivo e a última mudança que modificou cada linha em cada arquivo. Quando há algum conflito, ele verifica se um dos dois lados já foi aplicado ao outro; se já foi aplicado, ele faz com que o outro lado ganhe automaticamente. Quando há um conflito real, não automático, de versões mescláveis, o Codeville se comporta quase da mesma maneira que o CVS."
