@@ -1,3 +1,1 @@
-Aegis — http://aegis.sourceforge.net/
-
-O Aegis é um sistema de gerenciamento de configuração de software baseado em transação. Ele fornece um quadro no qual uma equipe de desenvolvedores pode trabalhar em muitas mudanças para um programa independentemente, e o Aegis coordena integrando essas mudanças de volta para a fonte principal do programa, com o mínimo de transtorno possível.
+O Bazaar está disponível oficialmente para uma série de sistemas operacionais e também em forma de código fonte que “teoricamente” pode ser compilado em qualquer plataforma que rode Python.
