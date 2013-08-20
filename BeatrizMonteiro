@@ -1,0 +1,5 @@
+Agora o Bazaar conhece os arquivos que ele deve manter o histórico, então vamos criar nossa primeira “revisão” dos arquivos existentes. Pense em uma revisão como uma foto do estado atual dos arquivos.
+Como o Bazaar é um controle de versão distribuído não é necessário conectar a um servidor para enviar as alterações, todo o histórico de todos os arquivos ficam guardados dentro de apenas um sub-diretório especial chamado “.bzr” que fica no diretório raíz do branch.
+Alterando seus arquivos
+Vamos fazer algumas alterações e armazenar (commit) o que foi feito para o nosso branch.
+Edite o arquivo teste1.txt em seu editor favorito, depois verifique o que foi feito:
