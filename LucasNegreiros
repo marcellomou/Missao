@@ -1,5 +1,24 @@
-Vesta — http://www.vestasys.org/
+« Ruby on Rails 2.2 is out!Rails footnotes full linux support (footnotes for linux) »
+Controle de versão (Bazaar) em 5 minutos
+novembro 28, 2008 por Alexandre
+Este é um pequeno guia para iniciantes, que já tenham alguma noção do que é um controle de versão, caso você ainda não saiba veja adefinição da Wikipédia sobre Sistema de Controle de versão e também a definição de Sistema de Controle de Versão Distribuído (Em Inglês) que é o caso do Bazaar.
+Quando precisamos de um controle de versão?
+Sempre que queremos manter o histórico de alterações de arquivos, sejam eles código fonte de programas ou até mesmo documentos (aquelas várias versões do seu trabalho de conclusão de curso) entre outros arquivos, também é possível manter versões de arquivos binários, como fotos programas executáveis entre outros, porém para estes últimos alguns recursos não são possíveis, tais como ver as diferenças entre o arquivo na revisão 5 e 6.
+Mas qual ferramenta usar?
+Bem, existem várias e depende do molde que você quer trabalhar, mas eu posso recomendar hoje 3 ferramentas, e vou listar em ordem da mais fácil para a mais difícil de usar (na minha opinião), são elas: Bazaar, Git e Mercurial.
+Presando pela facilidade de instalação e uso mas com todos os recursos dos demais e até mais algumas opções, minha opção foi o Bazaar.
+Vou partir do princípio que você sabe instalar um software em seu sistema operacional, bem como utilizar um shell (“Promt de comando” para usuários windows). Todos os meus exemplos são feitos no Linux utilizando o gnome-terminal, sendo que para Windows alguns comandos do sistema operacional podem ser diferentes, mas os comandos do Bazaar são iguais
+Instalação
+O Bazaar está disponível oficialmente para uma série de sistemas operacionais e também em forma de código fonte que “teoricamente” pode ser compilado em qualquer plataforma que rode Python.
+Linux: Se já não estiver instalado você pode facilmente encontrar em seu gerenciador de pacotes, geralmente o nome do pacote é “bzr” e não bazaar:
+Windows Siga as instruções de instalação (Em inglês) aqui ou clique aqui para baixar o diretamente o instalador da versão 1.9.
+Mac OS X: Siga as instruções aqui (Em inglês).
+Para outras plataformas e instalação via código fonte, veja mais informações aqui e aqui (Em inglês).
+Se apresentando para o Bazaar
 
-"O Vesta é um sistema SCM (Software Configuration Manager - um gerenciador de configuração de software) portável orientado para apoiar o desenvolvimento de sistemas de software de quase qualquer tamanho, desde os relativamente pequenos (abaixo de 10.000 linhas de código) até os muito grandes (10.000.000 de linhas de código)."
-
-"O Vesta é um sistema maduro. Ele é o resultado de aproximadamente 10 anos de pesquisas e desenvolvimento no Compaq/Digital Systems Research Center (Centro de Pesquisas de Sistemas Compaq/Digital), e foi usado em produção pelo Compaq's Alpha microprocessor group (grupo do microprocessador Alpha do Compaq) por aproximadamente dois anos e meio. O grupo Alpha teve cerca de 150 desenvolvedores ativos em dois locais que estavam a milhares de kilômetros de distância um do outro, nas costas leste e oeste dos Estados Unidos. O grupo usava o Vesta para gerenciar compilações com tanto quanto 130 MB de fonte de dados, cada qual produzindo 1,5 GB de dados derivados. As compilações feitas no leste em um dia normal produziram cerca de 10-15 GB de dados derivados, tudo gerenciado pelo Vesta. Embora o Vesta foi projetado com a idéia de gerenciar desenvolvimentos de software, o grupo Alpha demonstrou a flexibilidade do sistema usando-o para desenvolvimento de hardware, registrando seus arquivos de linguagem de descrição de hardware no código fonte do Vesta para habilidade de controle e construção de simuladores e outros objetos derivados com o construtor do Vesta. Os membros do primitivo grupo Alpha, agora uma parte da Intel, continuam usando o Vesta hoje em um novo projeto de microprocessador."
+Antes de começar a controlar versão de coisas é interessante colocar sua identificação no Bazaar, para que ele possa “assinar” suas alterações nos arquivos, normalmente é utilizado o nome e email como identificação, portanto em um promt utilizando seus próprios dados digite:
+o Bazaar vai criar um arquivo de configuração (ou atualizar se ele já existir) incluindo sua identificação. para verificar qual a identificação você está utilizando atualmente ignore o segundo parâmetro e ele exibirá as configurações atuais:
+Agora vem a parte interessante, vamos controlar a versão de alguns arquivos, para isso vamos criar uma pasta/diretório onde ficarão estes arquivos:
+(Usuários do windows não possuem o comando touch, e devem usar o Windows Explorer ou outra ferramenta para criar alguns arquivos texto vazios)
+Até agora temos apenas uma pasta e um punhado de arquivos, vamos colocá-los agora no controle de versão:
+Aparentemente nada foi feito, porém o Bazaar inicializou o diretório atual como um “branch” que nada mais é do que um local onde ficarão registradas todas as alterações realizadas nos arquivo pertencentes a ele. No Bazaar um branch é um diretório.
